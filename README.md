@@ -14,33 +14,33 @@
  Page folder file setup
  -----------------
 * Layout
-*  -Main
+*  >Main
 * Pages
-*  -SignUp
-*   --SignUp
-*  -Login
-*   --Login
-*  -Home
-*   --Home
-*   --Banner
-*   --About
-*   --Servicess
-*   --ServicCard
-*  -Shared
-*   --Navber
-*   --Footer
-*  -CheckOut
-*   --Cheackout
-*   --Bookings
-*   --BookingTable
+*  >SignUp
+*   >>SignUp
+*  >Login
+*   >>Login
+*  >Home
+*   >>Home
+*   >>Banner
+*   >>About
+*   >>Servicess
+*   >>ServicCard
+*  >Shared
+*   >>Navber
+*   >>Footer
+*  >CheckOut
+*   >>Cheackout
+*   >>Bookings
+*   >>BookingTable
 * Providers
-*  -AauthProviders
+*  >AauthProviders
 * Routes
-*  -Routes
-*  -RrivateRoutes
+*  >Routes
+*  >RrivateRoutes
 * Hooks
-*  -useAuth
-*  -RrivateRoutes
+*  >useAuth
+*  >RrivateRoutes
 
 <!-- .eslintrc.cjs ---  rules: {'react/prop-types': 'off', }
 

@@ -8,7 +8,10 @@
 4. goto ---- https://console.firebase.google.com
 5. goto ---- https://vitejs.dev/guide/env-and-mode.html
 6. goto ---- https://reactrouter.com/en/main/hooks/use-location
-7. goto ---- 
+7. goto ---- https://axios-http.com/docs/post_example
+8. goto ---- https://axios-http.com/docs/api_intro
+8. goto ---- https://axios-http.com/docs/interceptors
+8. goto ---- 
 
  -----------------
  Page folder file setup
@@ -42,7 +45,7 @@
 *  >useAuth
 *  >RrivateRoutes
 
-<!-- .eslintrc.cjs ---  rules: {'react/prop-types': 'off', }
+<!-- .eslintrc.cjs ---  rules: {'react/prop-types': 'off', } -->
 
 
 
@@ -92,3 +95,15 @@ app.use(express.json());
 * secret key genarate
 require('crypto').randomBytes(64).toString('hex')
 
+
+
+ -------------------
+ Server Deployment steps
+ --------------------------
+
+*  https://github.com/ferdouszihad/car-doctor-deployment
+
+* https://vercel.com/docs/cli
+
+server link:
+https://server-doctor-practice.vercel.app/

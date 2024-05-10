@@ -3,7 +3,7 @@ import img from '../../assets/images/login/login.svg'
 import useAuth from '../../Hooks/useAuth';
 const Login = () => {
     const location = useLocation();
-    console.log(location);
+    // console.log(location);
     const { handleSigInUser } = useAuth()
     const navigate = useNavigate();
     const handleLogin = (event) => {
@@ -11,7 +11,7 @@ const Login = () => {
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+        // console.log(email, password);
 
         handleSigInUser(email, password)
             .then(() => {
@@ -21,7 +21,7 @@ const Login = () => {
             .catch((error) => {
                 // const errorCode = error.code;
                 const errorMessage = error.message;
-                console.log(errorMessage);
+                // console.log(errorMessage);
             });
     }
     return (

@@ -23,9 +23,9 @@ const Cheackout = () => {
             service: title,
             service_id: _id
         }
-        console.log(booking);
+        // console.log(booking);
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://server-doctor-practice.vercel.app/bookings', {
             method: 'POST',
             headers:{
                 'content-type' : 'application/json'
@@ -34,7 +34,7 @@ const Cheackout = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             if (data.insertedId){
                 alert('success')
             }

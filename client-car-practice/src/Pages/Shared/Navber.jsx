@@ -10,7 +10,7 @@ const Navber = () => {
                 // Sign-out successful.
             })
             .catch((error) => {
-                console.log('logout error', error);
+                // console.log('logout error', error);
             });
     }
     const Navbers = <>

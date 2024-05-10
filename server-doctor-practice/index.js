@@ -59,7 +59,6 @@ const veryfyToken = async (req, res, next) => {
 }
 
 
-
 async function run() {
     try {
         // Connect the client to the server	(optional starting in v4.7)
@@ -71,14 +70,19 @@ async function run() {
         // auth related
         app.post('/jwt', async (req, res) => {
             const user = req.body;
-            console.log(user);
+            console.log('user for token', user);
             const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1h' });
-            res
-                .cookie('token', token, {
+            res.cookie('token', token, {
                     httpOnly: true,
-                    secure: false,
+                    secure: true,
+                    sameSite:'none'
                 })
                 .send({ success: true });
+        })
+        app.post('/logout', async (req, res) => {
+            const user = req.body;
+            console.log('logging out', user);
+            res.clearCookie('token', { maxAge: 0 }).send({ success: true })
         })
 
 
@@ -163,4 +167,4 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
-}) 
+})

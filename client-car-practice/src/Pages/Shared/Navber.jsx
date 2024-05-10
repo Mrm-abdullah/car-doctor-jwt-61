@@ -1,10 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/logo.svg'
-import { useContext } from "react";
-import { AuthContext } from "../../Providers/AuthProviders";
+import useAuth from "../../Hooks/useAuth";
 
 const Navber = () => {
-    const { user, handleLogoutUser } = useContext(AuthContext)
+    const { user, handleLogoutUser } = useAuth()
     const handleLogout = () => {
         handleLogoutUser()
             .then(() => {

@@ -38,6 +38,9 @@ Providers
 Routes
  >Routes
  >RrivateRoutes
+Hooks
+ >useAuth
+ >RrivateRoutes
 
 <!-- .eslintrc.cjs -->  rules: {'react/prop-types': 'off', }
 

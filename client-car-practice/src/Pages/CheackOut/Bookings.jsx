@@ -1,11 +1,11 @@
-import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../../Providers/AuthProviders";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import BookingTable from "./BookingTable";
+import useAuth from "../../Hooks/useAuth";
 
 const Bookings = () => {
 
-    const { user } = useContext(AuthContext)
+    const { user } = useAuth()
     const [bookings, setBookings] = useState([]);
 
     const handleDelete = (id) => {

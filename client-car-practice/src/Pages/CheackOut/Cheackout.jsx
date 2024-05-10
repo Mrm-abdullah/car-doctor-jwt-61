@@ -1,11 +1,10 @@
-import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
-import { AuthContext } from "../../Providers/AuthProviders";
+import useAuth from "../../Hooks/useAuth";
 
 const Cheackout = () => {
     const service = useLoaderData();
     const { title, _id , price, img} = service;
-    const {user} = useContext(AuthContext);
+    const {user} = useAuth()
 
 
     const handleBookService = (e) =>{
